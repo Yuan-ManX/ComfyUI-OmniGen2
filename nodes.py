@@ -18,7 +18,7 @@ def load_pipeline(model_path, accelerator, weight_dtype):
     )
   
     if args.scheduler == "dpmsolver":
-        from omnigen2.schedulers.scheduling_dpmsolver_multistep import DPMSolverMultistepScheduler
+        from .omnigen2.schedulers.scheduling_dpmsolver_multistep import DPMSolverMultistepScheduler
         scheduler = DPMSolverMultistepScheduler(
             algorithm_type="dpmsolver++",
             solver_type="midpoint",

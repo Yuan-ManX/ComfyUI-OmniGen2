@@ -45,7 +45,7 @@ import PIL.Image
 
 from diffusers.utils import BaseOutput
 
-from omnigen2.pipelines.image_processor import OmniGen2ImageProcessor
+from ..image_processor import OmniGen2ImageProcessor
 
 if is_torch_xla_available():
     import torch_xla.core.xla_model as xm
