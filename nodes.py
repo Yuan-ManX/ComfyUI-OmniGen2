@@ -6,8 +6,8 @@ import torch
 from torchvision.transforms.functional import to_pil_image, to_tensor
 from accelerate import Accelerator
 
-from omnigen2.pipelines.omnigen2.pipeline_omnigen2 import OmniGen2Pipeline
-from omnigen2.utils.img_util import resize_image
+from .omnigen2.pipelines.omnigen2.pipeline_omnigen2 import OmniGen2Pipeline
+from .omnigen2.utils.img_util import resize_image
 
 
 def load_pipeline(model_path, accelerator, weight_dtype):
