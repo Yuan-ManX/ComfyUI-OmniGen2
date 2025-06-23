@@ -126,7 +126,6 @@ class LoadOmniGen2Model:
             "required": {
                 "model_path": ("STRING", {"default": "OmniGen2/OmniGen2"}),
                 "dtype": (["fp32", "fp16", "bf16"], {"default": "bf16"}),
-                "device": (["cuda", "cpu"], {"default": "cuda"}),
             }
         }
 
